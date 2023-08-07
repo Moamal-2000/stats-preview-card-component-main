@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  caret-color: var(--accent-color);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  /* font-family: 'Lexend Deca', sans-serif; */
+  background-color: var(--main-background);
+  overflow: hidden;
+}
+
+:root {
+  --main-background: #090b1a;
+  --card-background: #1b1938;
+  --accent-color: #aa5cdb;
+  --main-heading-color: #ffffff;
+  --main-paragraph-color: #ffffffbf;
+  --stat-heading-color: #ffffff99;
+  --white: #fff;
+}
+
+p {
+  font-size: .9375rem;
+}
