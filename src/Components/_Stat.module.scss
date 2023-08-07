@@ -4,6 +4,16 @@
   margin-left: 60px;
 }
 
+@media (max-width: 768px) {
+  .stat:not(:first-child) {
+    margin: 0;
+  }
+
+  .stat:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
 .stat span:first-child {
   color: var(--white);
   font-weight: 600;

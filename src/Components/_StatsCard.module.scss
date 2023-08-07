@@ -9,21 +9,65 @@
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 92%;
+  }
+}
+
 .StatsCard {
   background-color: var(--card-background);
   display: flex;
   width: 90%;
-  height: 400px;
+  height: 460px;
   @include prefix(border-radius, 10px);
+}
+
+@media (max-width: 1300px) {
+  .StatsCard {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 768px) {
+  .StatsCard {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .StatsCard {
+    width: 100%;
+  }
 }
 
 .content {
   padding: 70px;
 }
 
+@media (max-width: 1300px) {
+  .content {
+    padding: 30px;
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex: 0;
+  }
+}
+
 .title {
   color: var(--white);
   font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .title {
+    text-align: center;
+    font-size: 1.6rem;
+  }
 }
 
 .title span {
@@ -36,15 +80,33 @@
   line-height: 1.5;
 }
 
+@media (max-width: 1300px) {
+  .description {
+    margin: 18px 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .description {
+    text-align: center;
+  }
+}
+
 .stats {
   display: flex;
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+  }
+}
+
 .img {
   background-image: url("./images/image-header-desktop.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   min-width: 50%;
   height: 100%;
   user-select: none;
@@ -59,5 +121,20 @@
     background-color: #56008193;
     width: 100%;
     height: 100%;
+    @include prefix(border-radius, 0 10px 10px 0);
+  }
+}
+
+@media (max-width: 1300px) {
+  .img {
+    background-size: cover;
+    width: 100%;
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .img {
+    min-height: 180px;
   }
 }
